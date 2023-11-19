@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  #box{
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+  }
+</style>
+<body>
+    <p>This is a class4</p>
+    <div id="box"></div>
+
+
+   
+
+
+
+
+
+
+
+
+    <script>
+        // var table = prompt("Write a Number");
+        // for (var i = 1; i <= 10; i++){
+        //   console.log(table + " X " + i + " = " + i*table);
+        // }
+     
+        // var psl = ["karachi","Lahore","Islamabad","Peshawar","Quetta","Multan"];
+        // var team = prompt("Enter Your Team");
+        // var found = false;
+        // for(var i = 0; i < psl.length; i++){
+        //   if(team.toLowerCase() == psl[i].toLowerCase()){
+        //     document.getElementById("box").innerHTML = team + "Found";
+        //     found = true;
+        //     break;
+        //   }
+        // }
+        // if(!found){
+        //   alert("This is a Wrong");
+        // }
+
+        // var car = ["BMW","Mercedez","Ford","Ferrari",];
+        // var len = car.length; 
+        // var text = "";
+
+        // for(var i = 0; i < len; i++){
+        //   text += i + car[i] + "<br>";
+        //   document.getElementById("box").innerHTML = text;
+        // }
+        var fruit = ["Apple","Banana","Pineapple","Guava","Strawbery"];
+        var name = prompt("Enter Name");
+        var nam = fruit.length;
+        var found = false;
+        var i = 0;
+        for(; i < nam; i++){
+          if(name.toLowerCase() === fruit[i].toLowerCase()){
+            document.getElementById("box").innerHTML = name + "<br>" + "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero pariatur placeat porro neque officiis voluptas corrupti.";
+            found = true;
+            break;
+          };
+        };
+        if(!found){
+          alert("Wrong");
+        };
+         
+        
+
+        
+       
+    </script>
+</body>
+</html>

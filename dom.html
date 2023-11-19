@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .hidden{
+        visibility: hidden;
+    }
+</style>
+<body>
+    <p id="para1">This is a Dom</p>
+    <button id="btn1"  onclick="btnone()">text</button>
+    <p id="para2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod eum esse quam illum reiciendis beatae sapiente soluta consequuntur voluptatibus cumque aliquid, nostrum ab architecto provident iste exercitationem ad asperiores distinctio necessitatibus. Iste sunt, nisi non quibusdam eos accusantium laboriosam voluptatum deleniti voluptatem ducimus temporibus laborum quis quidem illum porro officia corporis quam voluptates! Minus, eveniet? Culpa!</p>
+    <button id="btn4"  onclick="btnfour()">text</button>
+    
+    <img src="./original-b21092fcf23786b73678af3b3927d6cf.webp" id="img1" alt="">
+    <button id="btn2"  onclick="btntwo()">click</button>
+
+    <img src="./images.jpeg" id="img2" alt="">
+    <button id="btn3"  onmouseover="btnthree()">click</button>
+    <script>
+      function btnone(){
+        var lor = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias sapiente, ullam sit, voluptates veniam dolorem cumque repellat ratione, modi porro accusamus quos culpa minus deleniti ad rerum accusantium incidunt ducimus inventore eaque fugiat. Doloremque doloribus voluptatem dignissimos quam consequatur, numquam nihil porro tempora mollitia omnis.";
+        var doc = document.getElementById("para1");
+        doc.innerText = lor;
+      }
+      function btntwo(){
+        var doctwo = document.getElementById("img1");
+        doctwo.src = "download.jpeg";
+    }
+    function btnthree(){
+        var img = document.getElementById("img2");
+        img.className = "hidden";
+        
+    }
+    function btnfour(){
+        var text = document.getElementById("para2");
+        text.style.fontSize = "34px";
+    }
+    
+
+    </script>
+</body>
+</html>

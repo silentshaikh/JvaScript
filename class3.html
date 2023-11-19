@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        #box1{
+        background-color: crimson;
+        color: white;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+    }
+    #box2{
+        background-color: crimson;
+        color: white;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        margin-top: 5px;
+    }
+</style>
+<body>
+    <p>This is a class3</p>
+    <div id="box1">
+
+    </div>
+    <button id="btn" onclick="myFunction()">Nesting</button>
+
+    <div id="box2">
+
+    </div>
+    <button id="btn2" onclick="myByno()">Even&Odd</button>
+    <div id="box3">
+        
+    </div>
+    <button id="btn" onclick="func()">function</button>
+    <div id="box4"></div>
+    <div id="box5"></div>
+    <div id="box"></div>
+    <div id="box6"></div>
+    <div id="box7"></div>
+    <div id="box8"></div>
+    <div id="box9"></div>
+    <div id="para1"></div>
+    <div id="para2"></div>
+    <div id="para3"></div>
+    <div id="para4"></div>
+    <div id="para5"></div>
+    <div id="para6"></div>
+    <div id="para"></div>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+
+
+
+    
+
+
+    <script>
+        //logical && operator
+        // console.log(false && true);
+        function myFunction(){
+            var num = +prompt("Enter Your Percentage");
+       if(num>=0 && num<=100){
+        if(num>=80){
+            document.getElementById("box1").innerHTML = "Congratulation " + "<br>" + "Your Grade is A-one" +  "<br>" + "Person" + "<br>" + num + "%"; 
+        }
+        else if(num>=70){
+            document.getElementById("box1").innerHTML = "Congratulation " + "<br>" + "Your Grade is A" +  "<br>" + "Person" + "<br>" + num + "%"; 
+        }
+        else if(num>=60){
+            document.getElementById("box1").innerHTML = "Congratulation " + "<br>" + "Your Grade is B" +  "<br>" + "Person" + "<br>" + num + "%"; 
+        }
+        else if(num>=50){
+            document.getElementById("box1").innerHTML = "Congratulation " + "<br>" + "Your Grade is C" +  "<br>" + "Person" + "<br>" + num + "%"; 
+        }
+        else if(num>=40){
+            document.getElementById("box1").innerHTML = "Congratulation " + "<br>" + "Your Grade is D" +  "<br>" + "Person" + "<br>" + num + "%"; 
+        }
+        else if(num<=40){
+            document.getElementById("box1").innerHTML = "Congratulation " + "<br>" + "Your Grade is Fail" +  "<br>" + "Person" + "<br>" + num + "%"; 
+        }
+       }else{
+            alert("This is Wrong");
+        }
+        };
+        
+        function myByno(){
+            var bynom = +prompt("Enter Even & Odd Number","Guest");
+            
+                if(bynom % 2 === 0){
+                    document.getElementById("box2").innerHTML = "This is an Even Number " + "<br>" + bynom;
+                }
+                else if(bynom % 5 === 0){
+                    document.getElementById("box2").innerHTML = "This is an Odd Number " + "<br>" + bynom;
+                } 
+            
+            else{
+                alert("This is Wrong");
+            }
+        }
+
+
+        //Array
+        var city = ["islamabad","peshawar","quetta","karachi","lahore"]
+        // city.pop();
+        console.log(city);
+        // city.splice(1,2 ,"hunza","skardu");
+        console.log(city.slice(0,3));
+        document.getElementById("box3").innerHTML = city ;
+
+        function func(){
+            city[city.length] = "ndubwcu";
+            document.getElementById("box3").innerHTML = city + "" + city.length;
+        }
+        var sport = ["Cricket","Football","Hockey","Tennis","Baseball","Basketball"];
+        document.getElementById("box4").innerHTML = sport.join("*");
+        // pop
+        var fruit = ["pineapple", "apple","strawbery","orange " ];  
+        document.getElementById("box5").innerHTML = fruit.pop(); // this method is those value return that was popout
+        document.getElementById("box").innerHTML = fruit;
+        
+        //push
+        var nam = ["hasan","fahad","moiz","awaiz"];
+        document.getElementById("box6").innerHTML = nam.push("saim","snxidn");  // this method return new array length
+        document.getElementById("box7").innerHTML = nam;
+        //shift
+        var direct = ["left","right","top"];
+        document.getElementById("box8").innerHTML = direct.shift();
+        document.getElementById("box9").innerHTML = direct;
+        //unshift
+        var play = ["music","tv","phone"];
+        document.getElementById("para1").innerHTML = play.unshift("Xbox");
+        document.getElementById("para2").innerHTML = play;
+
+        var pahl = ["grapes","dragonfruit",];
+        document.getElementById("para3").innerHTML = pahl;
+        pahl[1] = "pineapple";
+        document.getElementById("para4").innerHTML = pahl;
+        //length property
+        var drink = ["water","pepsi"];
+        document.getElementById("para5").innerHTML = drink;
+        drink[drink.length] = "dew";
+        document.getElementById("para6").innerHTML = drink;
+        //concat
+        var boy = ["faisal","farhan","hashir"];
+        var girl = ["alizeh","iqra"];
+        var conc = boy.concat(girl);
+        document.getElementById("para").innerHTML = conc;
+        //splice
+        var tour = ["burj","pyra"];
+        tour.splice(1,2,"tor");
+        console.log(tour);
+
+
+       
+    </script>
+</body>
+</html>

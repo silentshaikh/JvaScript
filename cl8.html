@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>This bed is too small.</p>
+    <p>This bed is too big.</p>
+    <p>This bed is just right.</p>
+
+
+
+    <script>
+        var par = document.getElementsByTagName("p");
+        var textInMiddleParagraph = par[1].innerHTML;
+        par[1].innerHTML = "This SUV is too big.";
+        for (var i = 0; i < par.length; i++) {
+            par[i].style.fontFamily =  "Verdana, Geneva, sans-serif";
+        }
+
+    </script>
+</body>
+
+</html>

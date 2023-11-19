@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: burlywood;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a Date</p>
+
+    <div id="box">
+
+    </div>
+
+
+    <script>
+        var a = new Date(2023);
+        document.write(a)
+        var b = new Date();
+        console.log(b.toDateString())
+        var c= new Date();
+        console.log(c.toUTCString())
+        var d= new Date();
+        console.log(d.toISOString())
+        let text;
+        const today = new Date();
+        const someday = new Date();
+        someday.setFullYear(2023,11,4);
+        if(someday < today){
+            text = "Today is after December 4, 2023";
+        }else{
+            text = "Today is before December 4, 2023";
+        }
+        document.getElementById("box").innerHTML = "The Time is" + "<br>" + text;
+
+
+    </script>
+</body>
+</html>

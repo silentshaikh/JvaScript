@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is a class 7</p>
+    <p id="p"></p>
+
+    <button onclick="btn()">alert</button>
+    <input type="text" name="" id="email">
+    <input type="password" name="" id="password">
+    <button onclick="check()">check</button>
+    
+    <script>
+        // let table = +prompt("Enter a Number");
+        // let i = 1;
+        // do{
+        //     console.log(table + " X " + i + " = " + i*table);
+        //     i++;
+        // }while(i <= 10)
+        // var a = 1;
+        // do{
+        //     console.log("This is " + a + " times");
+        //     a++;
+        // }while(a < 10);
+      
+         function btn(){
+            alert("This is a Alert")
+            document.getElementById("p").innerHTML = "Hello World";
+         }
+         let emai = document.getElementById("email").value;
+         let pass = document.getElementById("password").value;
+         function check(){
+            if(emai === ""){
+                alert("Enter Your Email")
+            }
+            else if(pass === ""){
+                alert("Enter Your password")
+            }
+         }
+
+    </script>
+</body>
+</html>
